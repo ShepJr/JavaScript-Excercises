@@ -1,0 +1,101 @@
+ /* Multi-line comment nibba */
+ // string methods
+var doh = 'dough boy';
+console.log(doh.toUpperCase()); //upper case
+console.log(doh.split(" ")); //split at the space
+console.log(doh.split("")); //split all letters
+console.log(doh.split("o")); //split at the 'o'
+console.log(doh.charAt(0)); //prints character at the variable
+
+console.log('');
+console.log('');
+
+// Objects
+var person = {name:"Kim", age:88};
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+
+console.log('');
+
+// add properties to the object
+person.title = "Mrs.";
+person.gender = "female";
+console.log(person);
+
+
+console.log('');
+
+// modify properties
+person.name = "Kimberly";
+console.log(person);
+
+console.log('');
+
+// deleting properties
+delete person.title;
+console.log(person);
+
+console.log('');
+
+// comparing properties
+console.log(person.name.length > person.gender.length);
+
+console.log('');
+console.log('');
+
+// array of Objects
+
+var people = [
+  {name: "Kim", age: 88},
+  {name: "Bill", age: 34},
+  {name: "Bob", age: 24},
+  {name: "George", age: 58},
+  {name: "Bust", age: 69}
+  ];
+console.log(people); // returns the array of objects
+console.log(people[1].name); // returns 'bill'
+
+console.log('');
+
+// create a for loop to print all the names 
+for(i = 0; i < people.length;i++){
+  console.log(people[i].name);
+}
+
+for(i = 0;i<6;i++){ // returns 0 1 2 3 4 5
+  console.log(i);
+}
+
+var newarr = []
+for(i = 0; i < 6; i+=3){
+  newarr.push(i);
+}
+console.log(newarr); // returns [0,3]
+
+console.log('');
+
+var arr = []
+for(i = 0;i <= 6;i++){
+  arr.push(i);
+}
+console.log(arr); // returns [0,1,2,3,4,5,6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
