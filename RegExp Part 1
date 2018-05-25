@@ -1,0 +1,22 @@
+function zipCode(str){
+  var zip = /[^0-9]/g;
+  var x = zip.test(str);
+  if(x === true){
+    return false;
+  }
+  else{
+    return true;
+  }
+}
+
+function whiteSpace(str){
+  var white = /\s/g;
+  var y = white.test(str);
+  return y;
+}
+
+function socialSecurityNumber(str){
+  var ssn = /[0-9]{3}-[0-9]{2}-[0-9]{4}/g;
+  var z = ssn.test(str);
+  return z;
+}
